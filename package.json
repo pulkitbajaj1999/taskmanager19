@@ -1,0 +1,23 @@
+{
+  "name": "taskmanager19",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo run dev",
+    "client-dev": "turbo run dev --filter client",
+    "server-dev": "turbo run dev --filter server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "turbo": "^2.4.0"
+  },
+  "packageManager": "bun@1.2.2"
+}
