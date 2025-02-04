@@ -90,6 +90,12 @@ app.listen(PORT, (err) => {
   console.info(`server started on port: ${PORT}`)
 })
 
-mongoose.connect(MONGODB_URI).then((info) => {
-  console.log("connected to mongodb localhost on taskmanager19 database")
-})
+console.info("connecting to mongodb")
+mongoose
+  .connect(MONGODB_URI)
+  .then((info) => {
+    console.log(`connected to mongodb------`)
+  })
+  .catch((err) => {
+    console.error(err)
+  })

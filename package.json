@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "turbo run dev",
-    "start" : "turbo run start",
+    "start": "turbo run start",
     "client-dev": "turbo run dev --filter client",
     "server-dev": "turbo run dev --filter server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server-start": "turbo run start --filter server"
   },
   "workspaces": [
     "client",

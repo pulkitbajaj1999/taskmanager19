@@ -27,4 +27,4 @@ docker-compose.yml
 
 .vite
 .turbo
-.env
+.git

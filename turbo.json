@@ -9,10 +9,12 @@
       "dependsOn": ["^check-types"]
     },
     "dev": {
+      "env": ["MONGODB_URI"],
       "persistent": true,
       "cache": false
     },
     "start": {
+      "env": ["MONGODB_URI"],
       "persistent": true,
       "cache": false
     }

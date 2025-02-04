@@ -1,5 +1,5 @@
 # --- Base Image ---
-FROM node:lts-bullseye-slim AS base
+FROM node:lts-bookworm-slim AS base
 
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
@@ -25,4 +25,4 @@ COPY --from=dependencies /app/server/node_modules ./server/node_modules
 
 ENV PORT=8000
 
-CMD [ "pnpm", "exec", "turbo", "--filter", "server", "start" ]
+CMD [ "pnpm", "run", "server-start" ]
